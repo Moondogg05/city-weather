@@ -105,7 +105,7 @@ const App = () => {
   return(
     <section className="top-city">
       <Navigation></Navigation>
-      <div className="container">
+      <div className="app-container">
       {location.slice(0,4).map((city, index) => (
         <div className="columns is-centered is-vcentered is-multiline is-mobile" key={index}>          
           <div className="column is-12">
@@ -122,18 +122,18 @@ const App = () => {
 
           <div className="column is-12">
             <div className="weatherbox">
-              <p className="state center">{city.title} Forecast</p>
+              <p className="state center has-text-left-mobile">{city.title} Forecast</p>
               <div className="columns is-centered is-vcentered is-mobile labels">
                 <div className="column is-2-desktop center">
                   <p>Day:</p>
                 </div>
-                <div className="column is-2-desktop center">
+                <div className="column is-2-desktop center is-hoverable">
                   <p>Skies:</p>
                 </div>
                 <div className="column is-2-desktop center">
                   <p>Temp:</p>
                 </div>
-                <div className="column is-2-desktop is-hidden-mobile center">
+                <div className="column is-2-desktop center">
                   <p>Wind:</p>
                 </div>
               </div>

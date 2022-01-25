@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import weatherIcon from './weatherIcons';
+import compassArrow from './compassArrows';
 import Navigation from './Navigation';
 import axios from 'axios';
 
 const url = "https://meta-weather.vercel.app";
 const cities = ['2487610','2367105','2457170','2458833'];
-const iconUrl = "https://worldweather.wmo.int/images";
-const windIcons = "/images/wind_direction";
 
-const App = () => {
+let App = () => {
   const [location, setLocation] = useState([])
 
   useEffect(() => {
@@ -25,29 +25,6 @@ const App = () => {
     return Math.round(roundTemp)
   }
 
-  const weatherIcon = (conditions) => {
-    if (conditions === 'sn') {
-      return `${iconUrl}/6.png`
-    } else if (conditions === 'sl') {
-      return `${iconUrl}/8.png`
-    } else if (conditions === 'h') {
-      return `${iconUrl}/3.png`
-    } else if (conditions === 't') {
-      return `${iconUrl}/2.png`
-    } else if (conditions === 'hr') {
-      return `${iconUrl}/9.png`
-    } else if (conditions === 'lr') {
-      return `${iconUrl}/15.png`
-    } else if (conditions === 's') {
-      return `${iconUrl}/12.png`
-    } else if (conditions === 'hc') {
-      return `${iconUrl}/23a.png`
-    } else if (conditions === 'lc') {
-      return `${iconUrl}/22a.png`
-    } else if (conditions === 'c') {
-      return `${iconUrl}/24a.png`
-    }
-  }
   const getDay = (dateString) => {
     const weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
     const day = new Date(dateString)
@@ -64,42 +41,6 @@ const App = () => {
 
   const windSpeedMph = (windSpeed) => {
     return Math.round(windSpeed)
-  }
-
-  const compassArrow = (windDirection) => {
-    if (windDirection === 'N') {
-      return `${windIcons}/n.png`
-    } else if (windDirection === 'E') {
-      return `${windIcons}/e.png`
-    } else if (windDirection === 'S') {
-      return `${windIcons}/s.png`
-    } else if (windDirection === 'W') {
-      return `${windIcons}/w.png`
-    } else if (windDirection === 'NE') {
-      return `${windIcons}/ne.png`
-    } else if (windDirection === 'NW') {
-      return `${windIcons}/nw.png`
-    } else if (windDirection === 'SE') {
-      return `${windIcons}/se.png`
-    } else if (windDirection === 'SW') {
-      return `${windIcons}/sw.png`
-    } else if (windDirection === 'NNE') {
-      return `${windIcons}/nne.png`
-    } else if (windDirection === 'NNW') {
-      return `${windIcons}/nnw.png`
-    } else if (windDirection === 'SSE') {
-      return `${windIcons}/sse.png`
-    } else if (windDirection === 'SSW') {
-      return `${windIcons}/ssw.png`
-    } else if (windDirection === 'ENE') {
-      return `${windIcons}/ene.png`
-    } else if (windDirection === 'ESE') {
-      return `${windIcons}/ese.png`
-    } else if (windDirection === 'WNW') {
-      return `${windIcons}/wnw.png`
-    } else if (windDirection === 'WSW') {
-      return `${windIcons}/wsw.png`
-    }
   }
 
   return(
@@ -127,7 +68,7 @@ const App = () => {
                 <div className="column is-2-desktop center">
                   <p>Day:</p>
                 </div>
-                <div className="column is-2-desktop center is-hoverable">
+                <div className="column is-2-desktop center">
                   <p>Skies:</p>
                 </div>
                 <div className="column is-2-desktop center">

@@ -6,7 +6,7 @@ A simple React app that displays the current weather and a 6-day forecast for Sa
 
 This application uses the following Open Source components:
 
-__Create React App__ [https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)  
+<img src="https://create-react-app.dev/img/favicon/favicon.ico" alt="Create-React-App logo" width="16"/> __Create React App__ [https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)  
 Copyright (c) 2013-present, Facebook, Inc.  
 __MIT License__ [https://github.com/facebook/create-react-app/blob/main/LICENSE](https://github.com/facebook/create-react-app/blob/main/LICENSE)  
 

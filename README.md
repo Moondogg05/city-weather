@@ -10,7 +10,7 @@ This application uses the following Open Source components:
 Copyright (c) 2013-present, Facebook, Inc.  
 __MIT License__ [https://github.com/facebook/create-react-app/blob/main/LICENSE](https://github.com/facebook/create-react-app/blob/main/LICENSE)  
 
-__MetaWeather API__ [https://meta-weather.vercel.app/api/](https://meta-weather.vercel.app/api/)  
+<img src="https://meta-weather.vercel.app/static/img/weather/lc.svg" alt="MetaWeather API logo" width="16"> __MetaWeather API__ [https://meta-weather.vercel.app/api/](https://meta-weather.vercel.app/api/)  
 About: [https://meta-weather.vercel.app/about/](https://meta-weather.vercel.app/about/)  
 Author: Jason Cartwright [https://github.com/jasoncartwright](https://github.com/jasoncartwright)  
 

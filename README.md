@@ -8,7 +8,7 @@ This application uses the following Open Source components:
 
 __Create React App__ [https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)  
 Copyright (c) 2013-present, Facebook, Inc.  
-License: MIT License [https://github.com/facebook/create-react-app/blob/main/LICENSE](https://github.com/facebook/create-react-app/blob/main/LICENSE)  
+__MIT License__ [https://github.com/facebook/create-react-app/blob/main/LICENSE](https://github.com/facebook/create-react-app/blob/main/LICENSE)  
 
 __MetaWeather API__ [https://meta-weather.vercel.app/api/](https://meta-weather.vercel.app/api/)  
 About: [https://meta-weather.vercel.app/about/](https://meta-weather.vercel.app/about/)  
@@ -16,4 +16,4 @@ Author: Jason Cartwright [https://github.com/jasoncartwright](https://github.com
 
 __Bulma__ [https://bulma.io](https://bulma.io)  
 Copyright (c) 2022, Jeremy Thomas [https://github.com/jgthms](https://github.com/jgthms)  
-License: MIT License [https://github.com/jgthms/bulma#copyright-and-license-](https://github.com/jgthms/bulma#copyright-and-license-)  
+__MIT License__ [https://github.com/jgthms/bulma#copyright-and-license-](https://github.com/jgthms/bulma#copyright-and-license-)  
